@@ -17,7 +17,7 @@
   var map;
 
   function nsa(){
-    let options = {enableHighAccuracy: true, timeout: 5000, maximumAge: 0};
+    let options = {enableHighAccuracy: true, timeout: 10000, maximumAge: 0};
     navigator.geolocation.getCurrentPosition(success, e => console.log(e), options);   //this calls the function to find you
   }
 
